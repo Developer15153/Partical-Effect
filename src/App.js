@@ -1,13 +1,13 @@
-import { useEffect, useMemo, useRef } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
 import fragmentShader from "./fragment";
 import vertexShader from "./vertex";
-import { useControls } from "leva";
 
 function Scene() {
   const mesh = useRef();
+  const [scale, setScale] = useState(1.5);
   const speed = 0.3;
   const colorA = "#3f3089";
   const colorB = "#00bcff";
@@ -41,6 +41,7 @@ function Scene() {
   useEffect(() => {
     const handleResize = () => {
       mesh.current.material.uniforms.u_resolution.value.set(window.innerWidth, window.innerHeight);
+      setScale(window.innerWidth < 600 ? 1 : 1.5);
     };
 
     window.addEventListener('resize', handleResize);
@@ -63,9 +64,9 @@ function Scene() {
 
   return (
     <>
-      <OrbitControls enableZoom={false} enablePan={false}  />
+      <OrbitControls enableZoom={false} enablePan={false} />
       <ambientLight />
-      <points scale={1.5} ref={mesh}>
+      <points scale={scale} ref={mesh}>
         <icosahedronGeometry args={[2, 20]} />
         <shaderMaterial
           uniforms={uniforms}
