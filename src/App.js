@@ -63,7 +63,6 @@ function Scene() {
 
   return (
     <>
-      <color args={["#000000"]} attach="background" />
       <OrbitControls enableZoom={false} enablePan={false}  />
       <ambientLight />
       <points scale={1.5} ref={mesh}>

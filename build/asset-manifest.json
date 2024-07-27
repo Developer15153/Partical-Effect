@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.1f920414.css",
-    "main.js": "/static/js/main.701785c5.js",
-    "index.html": "/index.html",
-    "main.1f920414.css.map": "/static/css/main.1f920414.css.map",
-    "main.701785c5.js.map": "/static/js/main.701785c5.js.map"
+    "main.css": "/Partical-Blob/static/css/main.1f920414.css",
+    "main.js": "/Partical-Blob/static/js/main.701785c5.js",
+    "index.html": "/Partical-Blob/index.html",
+    "main.1f920414.css.map": "/Partical-Blob/static/css/main.1f920414.css.map",
+    "main.701785c5.js.map": "/Partical-Blob/static/js/main.701785c5.js.map"
   },
   "entrypoints": [
     "static/css/main.1f920414.css",
