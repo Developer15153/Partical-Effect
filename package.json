@@ -4,7 +4,7 @@
   "description": "",
   "keywords": [],
   "main": "src/index.js",
-  "homepage": "https://Developer15153.github.io/Partical-Blob",
+  "homepage": "https://Developer15153.github.io/Partical-Effect",
   "dependencies": {
     "@react-three/drei": "^9.109.2",
     "@react-three/fiber": "8.9.1",
